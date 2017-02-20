@@ -1,0 +1,30 @@
+<ion-view view-title="Novo">
+  <ion-content>
+    <div class="list list-inset">
+      <label class="item item-input">
+        <input type="text" placeholder="Nome" ng-model="suplemento.nome">
+      </label>
+      <label class="item item-input">
+        <input type="number" placeholder="Preço" ng-model="suplemento.preco">
+      </label>
+
+      <label class="item item-input  item-select">
+        <div class="input-label">
+          Marca
+        </div>
+        <select  ng-model="suplemento.marca" ng-options="marca._id as marca.nome for marca in vm.marcas track by marca._id "></select>
+      </label>
+
+      <label class="item item-input  item-select">
+        <div class="input-label">
+          Categoria
+        </div>
+        <select  ng-model="suplemento.categoria" ng-options="categoria._id as categoria.nome for categoria in vm.categorias track by categoria._id "></select>
+      </label>
+
+      <button class="button button-full button-positive" ng-click="vm.save(suplemento)">
+        Gravar
+      </button>
+    </div>
+  </ion-content>
+</ion-view>

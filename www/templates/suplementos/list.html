@@ -1,0 +1,14 @@
+<ion-view view-title="Suplementos">
+  <ion-nav-buttons side="right">
+      <button class="button button-icon" ng-click="vm.add()">
+              <i class="icon ion-compose"></i>
+            </button>
+  </ion-nav-buttons>
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="suplemento in vm.suplementos">
+        {{suplemento.nome}}
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

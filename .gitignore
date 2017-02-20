@@ -1,0 +1,28 @@
+# Specifies intentionally untracked files to ignore when using Git
+# http://git-scm.com/docs/gitignore
+
+node_modules/
+platforms/
+plugins/
+# Created by https://www.gitignore.io/api/visualstudiocode
+
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# End of https://www.gitignore.io/api/visualstudiocode
+
+
+*.keystore
+*.sw*
+platforms/
+plugins/
+
+app/bower_components/
+node_modules/
+.tmp/
+.DS_Store
+*.log
